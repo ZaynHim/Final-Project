@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrogQuest | Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="bi bi-bug-fill"></i> FrogQuest</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Species</a></li>
+            <li class="nav-item"><a class="nav-link" href="anatomy.html">Frog Body</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <h1 class="section-title text-center mb-5">Contact</h1>
+
+    <div class="row g-4 mb-5">
+
+      <section class="col-lg-7">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title mb-3">Send me a message</h4>
+
+            <div id="contactAlert"></div>
+
+            <form id="contactForm" novalidate>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="contactName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="contactName" placeholder="Your name">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="contactEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com">
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <select class="form-select" id="contactSubject">
+                  <option value="">Choose one</option>
+                  <option value="Question about a trip">Question about a trip</option>
+                  <option value="I found a frog">I found a frog, what is it?</option>
+                  <option value="Feedback">Something about the site</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea class="form-control" id="contactMessage" rows="5" placeholder="If you found a frog, tell me where and what it looked like"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                <i class="bi bi-send"></i> Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="col-lg-5">
+        <div class="card info-card shadow-sm h-100">
+          <div class="card-body">
+            <h4 class="card-title mb-1">SDK Training Center</h4>
+            <p class="small mb-4">All trips start from the center. We meet in front of the building and go together.</p>
+            <ul class="list-unstyled contact-list">
+              <li><i class="bi bi-geo-alt-fill"></i> Irbid, Al-Naseem Traffic Lights, Al-Hmaydeh Complex, 3rd floor</li>
+              <li><i class="bi bi-telephone-fill"></i> 07 8988 8405</li>
+              <li><i class="bi bi-whatsapp"></i> +962 7 8988 8405</li>
+              <li><i class="bi bi-envelope-fill"></i> info@sdkjordan.com</li>
+              <li><i class="bi bi-globe"></i> <a href="http://www.sdkjordan.com/" target="_blank" class="info-link">www.sdkjordan.com</a></li>
+              <li><i class="bi bi-clock-fill"></i> Trips are on Fridays and Saturdays. Night walks start around 7 PM, day trips at 8 AM</li>
+            </ul>
+            <hr>
+            <h6 class="mb-3">Find the center online</h6>
+            <a href="https://heylink.me/sdk_training_center" target="_blank" class="social-link"><i class="bi bi-link-45deg"></i></a>
+            <a href="https://wa.me/962789888405" target="_blank" class="social-link"><i class="bi bi-whatsapp"></i></a>
+            <a href="http://www.sdkjordan.com/" target="_blank" class="social-link"><i class="bi bi-globe"></i></a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <section>
+      <h2 class="section-title text-center mb-4">Questions people ask me</h2>
+      <div class="accordion" id="faqAccordion">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              Will we actually see frogs?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Almost always, yes. Spring and early summer are the best. In the night walks we usually hear them within a few minutes and find them with the flashlight. In August it gets harder because the small streams dry up.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              Can I bring my kids?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Yes, from 8 years old and up, with a parent. The Wetland Day Trip is the easiest one. The Jordan Valley hike has some climbing so it's better for older kids.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+              Can we hold the frogs?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Only with wet hands and only for a few seconds. Frog skin absorbs whatever is on your hands, so no sunscreen or bug spray before touching. Mostly we look, take photos, and put them back exactly where we found them.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+              Where does my booking go?
+            </button>
+          </h2>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Right now it's saved in your browser only (LocalStorage), because this is a training project without a server. Message me or WhatsApp the center after booking so I actually see it.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer text-center py-4">
+    <div class="container">
+      <p class="mb-0">&copy; 2026 FrogQuest by Zayn Momany | SDK Training Center</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
